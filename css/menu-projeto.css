@@ -1,0 +1,85 @@
+.menu-projeto {
+    display: grid;
+    grid-area: menu-projeto;
+    justify-self: stretch;
+}
+
+#nome-projeto{
+    height: 38px;
+    padding: 0 0 0 10px;
+    margin: 10px 0 15px 0;
+    color: rgba(255, 255, 255);
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    justify-self: stretch;
+}
+
+#descricao{
+    height: 100px;
+    padding: 10px 0 0 10px;
+    margin: 0 0 25px 0;
+    color: rgba(255, 255, 255);
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    justify-self: stretch;
+}
+
+#linguagem{
+    height: 38px;
+    padding: 0 0 0 10px;
+    margin: 10px 0 15px 0;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.75;
+    font-size: 15px;
+    justify-self: stretch;
+}
+
+#opcao-linguagem{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+#cores{
+    width: auto;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    appearance: none;
+    justify-self: stretch;
+}
+
+#cores:hover{
+    cursor: pointer;
+}
+
+#botao-salvar{
+    height: 56px;
+    margin: 20px 0;
+    background: #5081FB;
+    border-radius: 8px;
+    border: none;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    justify-self: stretch;
+}
+
+#botao-salvar:hover{
+    background: #084cf8;
+    cursor: pointer;
+}
+
+#botao-salvar:active{
+    transform: scale(1.01);
+}

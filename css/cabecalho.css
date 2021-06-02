@@ -1,0 +1,46 @@
+header{
+    grid-area: header;    
+    display: grid;
+    grid-template-columns: 0.7fr 1.6fr 0.7fr;
+    gap: 0 20px;
+    grid-template-areas: "logo buscador usuario";
+}
+
+.logo { 
+    grid-area: logo;
+    justify-self: stretch;
+}
+
+.buscador { 
+    display: grid;
+    grid-area: buscador;
+    justify-self: stretch;
+}
+
+#busca{
+    height: 40px;
+    padding: 0 0 0 10px;
+    color: rgba(255, 255, 255);
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    justify-self: stretch;  
+}
+
+#img-busca, #img-barras, #img-fechar{
+    display: none;
+}
+
+.usuario { 
+    grid-area: usuario;
+    justify-self: end;
+}
+
+#imagem-usuario {
+    height: 45px;
+}
+
+#imagem-usuario:hover{
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+}

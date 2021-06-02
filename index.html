@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Editor - Alura Dev</title>      
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/tema-hl.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cabecalho.css">
+        <link rel="stylesheet" href="css/menu-navegacao.css">
+        <link rel="stylesheet" href="css/area-edicao.css">
+        <link rel="stylesheet" href="css/menu-projeto.css">
+        <link rel="stylesheet" href="css/media.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body id="container-index">
+        <header class="cabecalho">
+            <div class="logo">
+                <a href="index.html"><img id="imagem-logo" src="imgs/logo.svg" alt="Logo da Alura Dev"></a>
+            </div>
+            <div class="buscador">
+                <input type="text" id="busca" placeholder="Busque e pesquise...">
+            </div>
+            <div class="usuario">
+                <img id="imagem-usuario" src="imgs/usuario.svg" alt="Imagem do usuario">
+            </div>
+            <div class="menu">
+                <img src="imgs/imgBusca.svg" id="img-busca" alt="Imagem de busca">
+                <img src="imgs/imgMenuBarras.svg" id="img-barras" alt="Imagem de menu em barras">
+                <img src="imgs/imgMenuFechar.svg" id="img-fechar" alt="Imagem em formato de X">
+            </div>
+        </header>
+
+        <nav class="menu-navegacao">
+            <h1 id="titulos">M E N U</h1>
+            <ul>
+                <li><a href="index.html"><img src="imgs/imgEditor.svg"alt="Imagem de edição"></a></li>
+                <li><a href="index.html" id="editor">Editor de código</a></li>
+            </ul>
+            <ul>
+                <li><a href="comunidade.html"><img src="imgs/imgComunidade.svg" id="img-comunidade" alt="Imagem de comunidade"></a></li>
+                <li><a href="comunidade.html" id="comunidade">Comunidade</a></li>
+            </ul>
+            <ul class="usuario-mobile">
+                <li><img id="imagem-usuario-mobile" src="imgs/usuario.svg" alt="Imagem do usuario"></li>
+            </ul>
+            
+        </nav>
+
+        <main class="area-edicao">
+            <div id="campo-cor-editor">
+                <div id="caixa-editor">
+                    <img src="imgs/mac_buttons.svg" id="imagem-mac">                    
+                    <pre><code spellcheck="false" contenteditable="true" class="editor hljs javascript"></code></pre>                    
+                </div>
+            </div>
+            <button id="botao-highlight">Visualizar com o highlight</button>
+        </main>
+
+        <aside class="menu-projeto">
+            <label for="projeto" id="titulos">P R O J E T O</label>
+            <input type="text" id="nome-projeto" placeholder="Nome do projeto">
+            <textarea id="descricao" placeholder="Descrição do projeto"></textarea>
+            <label for="personalização" id="titulos">P E R S O N A L I Z A Ç Ã O</label>
+            <select name="linguagem" id="linguagem">
+                <option value="javascript" id="opcao-linguagem">JavaScript</option>
+                <option value="html" id="opcao-linguagem">HTML</option>
+                <option value="css" id="opcao-linguagem">CSS</option>
+            </select>
+            <input type="color" id="cores" value="#6BD1FF">
+            <button id="botao-salvar">Salvar projeto</button>
+        </aside>
+
+        <script src="js/selecionar-cor.js"></script>
+        <script src="js/menu-mobile.js"></script>
+        <script src="js/highlight.min.js"></script>
+        <script src="js/hl.js"></script>
+    </body>
+    
+    
+</html>
